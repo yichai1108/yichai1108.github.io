@@ -1,23 +1,19 @@
 ---
 show: true
 width: 8
-date: 2024-01-12 00:01:00 +0800
+date: 2025-01-13 00:01:00 +0800
 ---
 
 <div class="p-4">
-    <h2>Welcome to Showcase!</h2>
+    <h2>More about me!</h2>
     <hr />
     <p>
-        <code>Showcase</code> is a page where you can show off almost anything you want. It can be the photo of your pets, your favorite books, your favorite projects, or anything else you want to show to the world.
+        <code>Beyond Research</code>, I embrace a vibrant life filled with camping, hiking, and working out.
     </p>
     <p>
-        You can create a new showcase item by creating a new file in the <code>_showcase</code> folder. It gives you the highest flexibility to customize the item using any HTML code.
+        I spent 38 days traveling the U.S. by train, fueling my passion for travel and deepening my appreciation for geography. I also share my journey as a study-abroad influencer on <a href="https://www.xiaohongshu.com/user/profile/638b75f2000000001f01aed6" target="_blank">RedNote (Xiaohongshu)</a> .
     </p>
     <p>
-        Cards are ordered by the <code>date</code> field in the front matter in descending order. The <code>width</code> field is used to determine the width of the card, ranging from 1 to 12.
-        Layout is done by the <a href="https://masonry.desandro.com/" target="_blank">Masonry</a> library.
-    </p>
-    <p>
-        For a tidy layout, it is recommended to set the width of the cards to be either multiple of 3 or multiple of 4 for all cards, except for small badges that do not take up much space (width=1).
+        Explore this showcase to discover the many facets of who I am!
     </p>
 </div>
