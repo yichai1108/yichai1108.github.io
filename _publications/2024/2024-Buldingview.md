@@ -3,7 +3,7 @@ title:          "BuildingView: Constructing Urban Building Exteriors Databases w
 date:           2024-09-12 00:01:00 +0800
 selected:       true
 #pub:            ""
-pub_pre:        "Submitted to SpatialDI 2025"
+pub_pre:        "Accepted to ACM SpatialDI 2025"
 #pub_post:       'Under review, International Journal of Applied Earth Observation and Geoinformation(JAG)'
 #pub_last:       ' <span class="badge badge-pill badge-publication badge-success">Spotlight</span>'
 #pub_date:       "2024"
