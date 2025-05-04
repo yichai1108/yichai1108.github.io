@@ -19,7 +19,7 @@ authors:
   - Yinxin Zhu
 
 links:
-Paper: https://drive.google.com/file/d/1z7oZobtB36t6LWtz-iv53Df3mj1s-CvJ/view?usp=sharing
+  Paper: https://drive.google.com/file/d/1z7oZobtB36t6LWtz-iv53Df3mj1s-CvJ/view?usp=sharing
 #Code: https://github.com/ai4city-hkust/buildingview_turbo
 #  Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
