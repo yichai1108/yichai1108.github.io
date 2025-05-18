@@ -6,7 +6,7 @@ permalink: /contests/
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
-{% assign projects_by_year = site.patents | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{% assign contests_by_year = site.contests | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
 <div class="row">
     <div class="col-12 col-lg-10">
