@@ -17,6 +17,7 @@ authors:
   - Yufei LIANG
   - Zixiang GONG
 
-links: https://www.researchgate.net/publication/384440824_Compressive_Creep_of_PVA-ECC_Material_at_Early_Age?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjpudWxsLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19
+links:
+Paper: https://www.researchgate.net/publication/384440824_Compressive_Creep_of_PVA-ECC_Material_at_Early_Age?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjpudWxsLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19
 #  Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
