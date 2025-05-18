@@ -8,7 +8,7 @@ pages:
 - name: Projects
   url: /projects
 - name: Contests
-  url: /Contests
+  url: /contests
 - name: Patents
   url: /patents  
 - name: Showcase
