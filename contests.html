@@ -10,7 +10,7 @@ body_attr: >-
 
 <div class="row">
     <div class="col-12 col-lg-10">
-        {% for year in contess_by_year %}
+        {% for year in contests_by_year %}
         {% assign num_contests = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
