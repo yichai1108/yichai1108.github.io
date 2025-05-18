@@ -1,14 +1,14 @@
-{% assign patents = include.patents %}
+{% assign patents = include.contests %}
 <div class="my-3 p-0 bg-white shadow-sm rounded-sm">
     <h6 class="border-bottom border-gray p-3 mb-0">
         {% if include.title %}{{ include.title }}{% else %}<i class="fas fa-star"></i> Selected Recent Contests{% endif %} 
         <a href="{{ 'contests' | relative_url }}">(view all <i class="fas fa-angle-double-right"></i>)</a>
     </h6>
-    {% for item in patents limit:include.limit %}
+    {% for item in contests limit:include.limit %}
         {% include widgets/contest_item.html item=item first=false last=false %}    
     {% endfor %}
     <h6 class="d-block p-3 mt-0 text-right">
-        <a href="{{ 'patents' | relative_url }}">All patents <i class="fas fa-angle-double-right"></i></a>
+        <a href="{{ 'patents' | relative_url }}">All contests <i class="fas fa-angle-double-right"></i></a>
     </h6>
 </div>
 
