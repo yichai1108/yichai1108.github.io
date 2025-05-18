@@ -2,7 +2,7 @@
 layout: default
 title: "Contests"
 navbar_title: Contests
-permalink: /patents/
+permalink: /contests/
 body_attr: >-
   data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
@@ -10,8 +10,8 @@ body_attr: >-
 
 <div class="row">
     <div class="col-12 col-lg-10">
-        {% for year in patents_by_year %}
-        {% assign num_patents = year.items | size %}
+        {% for year in contess_by_year %}
+        {% assign num_contests = year.items | size %}
         <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
         <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
             {% for item in year.items %}
