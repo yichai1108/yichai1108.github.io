@@ -12,11 +12,12 @@ pub_pre:        "Accepted to 6th International Conference on Materials Science a
 #  Photo by Pineapple Supply Co. on Unsplash. Please put a tldr (too-long-didnt-read, 1~2 sentences) of your publication here. It is not recommended to put the actual abstract here because it is usually too long to fit in. $\LaTeX$ is supported. $a=b+c$.
 cover:  /assets/images/covers/1.png
 authors:
-  - Yichai HUANG
+  - Yichai HUANG#
   - Yufei LIANG
   - Yufei LIANG
-  - Zixiang GONG#
+  - Zixiang GONG
 
-links: https://www.researchgate.net/publication/384440824_Compressive_Creep_of_PVA-ECC_Material_at_Early_Age?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjpudWxsLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19
+links:
+  Paper: https://www.researchgate.net/publication/384440824_Compressive_Creep_of_PVA-ECC_Material_at_Early_Age
 #  Unsplash: https://unsplash.com/photos/sliced-in-half-pineapple--_PLJZmHZzk
 ---
