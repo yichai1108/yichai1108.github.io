@@ -7,5 +7,7 @@ pages:
   url: /publications
 - name: Projects
   url: /projects
+- name: Patents
+  url: /patents  
 - name: Showcase
   url: /showcase
