@@ -1138,6 +1138,10 @@ p:last-child {
     border-top: 0;
 }
 
+.publication-year-section .bib-item {
+    grid-template-columns: 1fr;
+}
+
 .bib-item {
     display: grid;
     grid-template-columns: 115px 1fr;
