@@ -1336,6 +1336,20 @@ p:last-child {
     max-width: 1180px;
 }
 
+.news-back-link {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 24px;
+    color: var(--blue);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.news-back-link:hover {
+    color: var(--navy-deep);
+}
+
 .media-story {
     padding: 0 0 94px;
 }
