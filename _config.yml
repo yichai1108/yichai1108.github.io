@@ -15,8 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 baseurl: ""
 url: "https://yichai1108.github.io"
-title: "Nate Huang"
-description: "Nate Yichai Huang - applied optimization, machine learning, risk analysis, and uncertainty quantification."
+title: "Nate Yichai HUANG"
+description: "Nate Yichai HUANG - applied optimization, machine learning, risk analysis, and uncertainty quantification."
 
 # Build settings
 markdown: kramdown
