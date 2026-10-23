@@ -346,25 +346,16 @@ p:last-child {
 }
 
 .phd-opportunity-note {
-    display: flex;
-    gap: 13px;
-    align-items: center;
     max-width: 820px;
-    margin: 24px 0 0;
+    margin: 15px 0 0;
     color: #43515f;
-    font-size: 0.94rem;
-    line-height: 1.65;
+    font-size: 0.98rem;
+    line-height: 1.7;
 }
 
 .phd-opportunity-note strong {
-    flex: 0 0 auto;
-    padding: 8px 12px;
-    background: #087df5;
-    border-radius: 999px;
-    color: var(--white);
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    color: #c43d3d;
+    font-weight: 700;
 }
 
 .resume-grid {
@@ -1832,20 +1823,6 @@ p:last-child {
 
     .hero-lead {
         font-size: 1rem;
-    }
-
-    .phd-opportunity-note {
-        display: block;
-    }
-
-    .phd-opportunity-note strong,
-    .phd-opportunity-note span {
-        display: block;
-    }
-
-    .phd-opportunity-note strong {
-        width: fit-content;
-        margin-bottom: 10px;
     }
 
     .home-news-item {
