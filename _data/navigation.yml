@@ -9,7 +9,5 @@ pages:
     url: /patents/
   - name: Honors
     url: /honors/
-  - name: CV
-    url: /assets/CV/Nate_Huang_CV.pdf
-    new_tab: true
-    button: true
+  - name: News
+    url: /news/
