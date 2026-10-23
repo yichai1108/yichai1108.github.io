@@ -957,6 +957,36 @@ p:last-child {
     font-size: clamp(1.75rem, 3vw, 2.55rem);
 }
 
+.project-affiliation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 17px;
+}
+
+.affiliation-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 10px 5px 6px;
+    background: #f3f6f8;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: #385066;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.affiliation-mark img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.project-affiliation + h2 {
+    margin-top: 11px;
+}
+
 .project-copy p,
 .project-copy li {
     color: #4c5863;
