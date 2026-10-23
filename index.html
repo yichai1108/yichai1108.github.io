@@ -9,11 +9,14 @@ description: "Nate Yichai HUANG is a UC Berkeley systems engineering master's st
     <div class="hero-copy">
         <h1>Nate Yichai HUANG</h1>
         <p class="hero-lead">I am a graduate student at UC Berkeley, pursuing my M.S. in System Engineering with a strong interest in applied machine learning and data-driven approaches to engineering problems.</p>
+        <p class="phd-opportunity-note">
+            <strong>Seeking Fall 2027 PhD opportunities</strong>
+            <span>My research interests include systems optimization, applied machine learning, risk analysis, and uncertainty quantification.</span>
+        </p>
         <div class="hero-actions">
             <a class="button button-primary" href="mailto:{{ site.data.profile.email }}"><i class="fa-regular fa-envelope"></i> Email me</a>
         </div>
         <div class="social-row">
-            <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
             <a href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </div>
     </div>
@@ -59,7 +62,9 @@ description: "Nate Yichai HUANG is a UC Berkeley systems engineering master's st
         </div>
         <div class="resume-list" aria-labelledby="awards-title">
             <article class="resume-item"><time>2025</time><div><h3>SWJTU Scholarship</h3></div></article>
-            <article class="resume-item"><time>2024</time><div><h3>SWJTU Scholarship</h3><p>Outstanding Student Leader · Integrity and Excellence Award</p></div></article>
+            <article class="resume-item"><time>2024</time><div><h3>SWJTU Scholarship</h3></div></article>
+            <article class="resume-item"><time>2024</time><div><h3>Outstanding Student Leader</h3></div></article>
+            <article class="resume-item"><time>2024</time><div><h3>Integrity and Excellence Award</h3></div></article>
         </div>
     </div>
 
@@ -89,7 +94,7 @@ description: "Nate Yichai HUANG is a UC Berkeley systems engineering master's st
                 <div>
                     <span class="card-kicker">June 2023–October 2024 · On-site</span>
                     <h3>Southwest Jiaotong University</h3>
-                    <p>Undergraduate Researcher · Apprenticeship</p>
+                    <p>Undergraduate Researcher</p>
                 </div>
             </article>
         </div>
@@ -109,26 +114,14 @@ description: "Nate Yichai HUANG is a UC Berkeley systems engineering master's st
     <div class="section-heading compact home-section-heading">
         <h2 id="recent-news-title">Recent News</h2>
     </div>
-    <div class="home-news-grid">
-        <article class="home-news-card">
-            <a class="home-news-image" href="{{ '/news/first-class-honours/' | relative_url }}">
-                <img src="{{ '/assets/images/news/leeds-first-class-degree.png' | relative_url }}" alt="University of Leeds First Class Honours degree certificate">
-            </a>
-            <div class="home-news-copy">
-                <div class="research-meta"><span>July 3, 2026</span><span>Leeds, UK</span></div>
-                <h3><a href="{{ '/news/first-class-honours/' | relative_url }}">Graduating with First Class Honours</a></h3>
-                <p>Completing my BEng in Civil Engineering with Transport with First Class Honours before beginning the next chapter at UC Berkeley.</p>
-            </div>
-        </article>
-        <article class="home-news-card">
-            <a class="home-news-image" href="{{ '/news/innovation-to-reality/' | relative_url }}">
-                <img src="{{ '/assets/images/news/china-innovation-shanghai.jpg' | relative_url }}" alt="Live presentation at the 2024 China International College Students Innovation Competition in Shanghai">
-            </a>
-            <div class="home-news-copy">
-                <div class="research-meta"><span>October 2024</span><span>Shanghai, China</span></div>
-                <h3><a href="{{ '/news/innovation-to-reality/' | relative_url }}">Leading Innovation from Research to Reality</a></h3>
-                <p>Our 22-member team won the National Silver Award, placing in the top 0.01% of more than 5.14 million entries.</p>
-            </div>
-        </article>
+    <div class="home-news-list">
+        <a class="home-news-item" href="{{ '/news/first-class-honours/' | relative_url }}">
+            <span>Graduating with First Class Honours</span>
+            <time datetime="2026-07-03">July 3, 2026</time>
+        </a>
+        <a class="home-news-item" href="{{ '/news/innovation-to-reality/' | relative_url }}">
+            <span>Leading Innovation from Research to Reality</span>
+            <time datetime="2024-10">October 2024</time>
+        </a>
     </div>
 </section>
