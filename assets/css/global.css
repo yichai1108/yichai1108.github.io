@@ -345,6 +345,26 @@ p:last-child {
     margin-bottom: 24px;
 }
 
+.resume-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(36px, 6vw, 80px);
+    align-items: start;
+}
+
+.resume-column {
+    min-width: 0;
+}
+
+.subsection-heading {
+    margin: 58px 0 20px;
+}
+
+.subsection-heading h2 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3vw, 2.55rem);
+}
+
 .recent-news-section {
     padding-top: 58px;
     padding-bottom: 90px;
@@ -410,6 +430,129 @@ p:last-child {
     background: var(--white);
     border: 1.5px solid var(--blue);
     border-radius: 18px;
+}
+
+.experience-list,
+.resume-list {
+    display: grid;
+    gap: 16px;
+}
+
+.experience-card {
+    display: flex;
+    gap: 17px;
+    padding: 28px;
+    background: var(--white);
+    border: 1.5px solid var(--blue);
+    border-radius: 18px;
+}
+
+.experience-card img {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+}
+
+.experience-card h3 {
+    margin-bottom: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.02rem;
+    font-weight: 700;
+}
+
+.experience-card h3 a {
+    color: var(--navy-deep);
+}
+
+.experience-card p {
+    margin: 0;
+    color: #344352;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.resume-item {
+    display: grid;
+    grid-template-columns: 78px 1fr;
+    gap: 18px;
+    padding: 20px 0;
+    border-top: 1px solid var(--line);
+}
+
+.resume-item time {
+    color: var(--blue);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.resume-item h3 {
+    margin-bottom: 6px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.98rem;
+    font-weight: 700;
+}
+
+.resume-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.84rem;
+}
+
+.home-news-grid {
+    display: grid;
+    gap: 22px;
+}
+
+.home-news-card {
+    display: grid;
+    grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.4fr);
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(11, 47, 82, 0.05);
+}
+
+.home-news-image {
+    display: flex;
+    min-height: 300px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #eef2f4;
+    border-right: 1px solid var(--line);
+}
+
+.home-news-image img {
+    width: 100%;
+    height: 100%;
+    max-height: 380px;
+    object-fit: cover;
+}
+
+.home-news-card:first-child .home-news-image img {
+    object-fit: contain;
+}
+
+.home-news-copy {
+    align-self: center;
+    padding: 34px 38px;
+}
+
+.home-news-copy h3 {
+    margin: 14px 0 12px;
+    font-size: clamp(1.55rem, 2.6vw, 2.35rem);
+}
+
+.home-news-copy h3 a {
+    color: var(--navy-deep);
+}
+
+.home-news-copy p {
+    color: var(--muted);
 }
 
 .education-card img {
@@ -649,6 +792,7 @@ p:last-child {
     gap: 54px;
     align-items: end;
     max-width: none;
+    padding-right: 190px;
 }
 
 .page-header-with-nav > div {
@@ -663,34 +807,42 @@ p:last-child {
 
 .year-nav {
     display: flex;
-    flex-wrap: wrap;
+    position: fixed;
+    z-index: 900;
+    top: 154px;
+    right: max(24px, calc((100vw - 1480px) / 2 + 24px));
+    width: 150px;
+    flex-direction: column;
     gap: 8px;
-    justify-content: flex-end;
-    padding-bottom: 8px;
+    padding: 0;
 }
 
 .year-nav a {
-    min-width: 68px;
-    padding: 8px 13px;
-    border: 1px solid #cfd9e1;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.68);
+    width: 100%;
+    padding: 15px 18px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: rgba(247, 245, 240, 0.94);
     color: var(--navy);
-    font-size: 0.76rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.06em;
-    text-align: center;
+    text-align: left;
+    box-shadow: 0 7px 22px rgba(11, 47, 82, 0.05);
 }
 
-.year-nav a:hover {
-    background: var(--navy);
+.year-nav a:hover,
+.year-nav a.active {
+    background: #087df5;
     color: var(--white);
 }
 
 .research-year-section,
-.publication-year-section {
+.publication-year-section,
+.contest-year-section,
+.news-year-section {
     scroll-margin-top: 100px;
-    padding: 18px 0 88px;
+    padding: 18px 190px 88px 0;
 }
 
 .year-section-heading {
@@ -718,8 +870,14 @@ p:last-child {
 }
 
 .research-year-section .project-list,
-.publication-year-section .bibliography {
+.publication-year-section .bibliography,
+.contest-year-section .project-list,
+.news-year-section .project-list {
     padding-bottom: 0;
+}
+
+#micro-ct-completion {
+    scroll-margin-top: 100px;
 }
 
 .page-header h1 {
@@ -983,7 +1141,7 @@ p:last-child {
 
 .patent-item {
     display: grid;
-    grid-template-columns: minmax(440px, 1.15fr) minmax(360px, 0.85fr);
+    grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.5fr);
     overflow: hidden;
     background: var(--white);
     border: 1px solid var(--line);
@@ -1005,7 +1163,9 @@ p:last-child {
 .patent-figure img {
     display: block;
     width: 100%;
+    max-height: 430px;
     height: auto;
+    object-fit: contain;
 }
 
 .patent-copy {
@@ -1019,8 +1179,47 @@ p:last-child {
 }
 
 .patent-copy p {
+    margin-bottom: 14px;
+    color: var(--muted);
+}
+
+.patent-copy .patent-authors {
+    color: #43515f;
+    font-size: 0.88rem;
+}
+
+.patent-copy .patent-abstract {
     margin-bottom: 22px;
     color: var(--muted);
+    font-size: 0.93rem;
+    line-height: 1.75;
+}
+
+.patent-index {
+    display: grid;
+    min-height: 300px;
+    place-items: center;
+    background: var(--navy);
+    color: var(--white);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 3rem;
+}
+
+.project-copy h2 a {
+    color: var(--navy-deep);
+}
+
+.news-detail-card .project-visual {
+    max-height: 520px;
+    overflow: hidden;
+}
+
+.news-detail-card .project-visual.contain img {
+    max-height: 500px;
+}
+
+.news-article-header {
+    max-width: 1180px;
 }
 
 .media-story {
@@ -1256,7 +1455,7 @@ p:last-child {
     }
 
     .education-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .education-card.featured {
@@ -1289,6 +1488,10 @@ p:last-child {
         border-bottom: 1px solid var(--line);
     }
 
+    .patent-index {
+        min-height: 150px;
+    }
+
     .project-detail-text {
         grid-template-columns: 90px 1fr;
     }
@@ -1299,6 +1502,31 @@ p:last-child {
 
     .honor-feature {
         grid-template-columns: 210px 1fr;
+    }
+
+    .page-header-with-nav {
+        padding-right: 0;
+    }
+
+    .year-nav {
+        position: static;
+        width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .year-nav a {
+        width: auto;
+        min-width: 76px;
+        padding: 9px 14px;
+        text-align: center;
+    }
+
+    .research-year-section,
+    .publication-year-section,
+    .contest-year-section,
+    .news-year-section {
+        padding-right: 0;
     }
 }
 
@@ -1344,6 +1572,8 @@ p:last-child {
     }
 
     .education-grid,
+    .resume-grid,
+    .home-news-grid,
     .featured-research-grid,
     .split-section,
     .patent-grid,
@@ -1377,6 +1607,16 @@ p:last-child {
 
     .year-nav {
         justify-content: flex-start;
+    }
+
+    .home-news-card {
+        grid-template-columns: 1fr;
+    }
+
+    .home-news-image {
+        min-height: 240px;
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
     }
 
     .project-detail-text {
