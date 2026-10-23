@@ -423,6 +423,93 @@ p:last-child {
     text-transform: uppercase;
 }
 
+.visitor-map-section {
+    padding-top: 58px;
+    padding-bottom: 90px;
+}
+
+.visitor-map-card {
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 12px 38px rgba(11, 47, 82, 0.05);
+}
+
+.visitor-map-card-header {
+    padding: 20px 28px;
+    border-bottom: 1px solid var(--line);
+}
+
+.visitor-map-card-header h2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1.3rem;
+}
+
+.visitor-map-card-header i {
+    color: #21835d;
+}
+
+.visitor-map-body {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+    gap: clamp(32px, 6vw, 72px);
+    align-items: center;
+    padding: 34px;
+}
+
+.visitor-map-widget {
+    display: flex;
+    min-height: 280px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #edf3f6;
+    border-radius: 12px;
+}
+
+.visitor-map-widget img,
+.visitor-map-widget canvas,
+.visitor-map-widget iframe {
+    max-width: 100%;
+}
+
+.visitor-map-copy h3 {
+    margin: 0 0 14px;
+    font-size: clamp(1.8rem, 3vw, 2.45rem);
+}
+
+.visitor-map-copy > p {
+    margin-bottom: 22px;
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.visitor-map-details {
+    display: grid;
+    gap: 9px;
+    color: #53616e;
+    font-size: 0.9rem;
+}
+
+.visitor-map-details > span,
+.visitor-map-details > a {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
+
+.visitor-map-details i {
+    width: 16px;
+    color: var(--blue);
+    text-align: center;
+}
+
 .coursework-section {
     padding-top: 58px;
     padding-bottom: 0;
@@ -1796,6 +1883,7 @@ p:last-child {
     .education-grid,
     .resume-grid,
     .home-news-grid,
+    .visitor-map-body,
     .featured-research-grid,
     .split-section,
     .patent-grid,
