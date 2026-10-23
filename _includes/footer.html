@@ -1,16 +1,16 @@
-<footer class="footer">
+<footer class="site-footer">
     <div class="container">
-        <div class="row my-3">
-            <div class="col-6">
-                <div class="text-muted">
-                    <i>Last updated: {{ "now" | date: "%b %Y" }}</i>
-                </div>
+        <div class="footer-inner">
+            <div>
+                <strong>Nate Yichai Huang</strong>
+                <span>Applied optimization · Machine learning · Risk & uncertainty</span>
             </div>
-            <div class="col-6">
-                <div class="text-right text-muted">
-                    {{ site.data.display.footer_text }}
-                </div>
+            <div class="footer-links">
+                <a href="mailto:{{ site.data.profile.email }}">Email</a>
+                <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
             </div>
         </div>
+        <div class="footer-meta">© {{ "now" | date: "%Y" }} Nate Huang · Last updated {{ "now" | date: "%B %Y" }}</div>
     </div>
 </footer>

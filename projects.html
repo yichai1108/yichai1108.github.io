@@ -1,31 +1,104 @@
 ---
 layout: default
-title: "Projects"
-navbar_title: Projects
+title: Research
+navbar_title: Research
 permalink: /projects/
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+description: "Research projects by Nate Huang in financial engineering, generative modeling, infrastructure resilience, computational mechanics, and civil engineering materials."
 ---
-{% assign projects_by_year = site.projects | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-<div class="row">
-    <div class="col-12 col-lg-10">
-        {% for year in projects_by_year %}
-        {% assign num_projects = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
-            {% for item in year.items %}
-                {% include widgets/project_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
-        </div>
-        {% endfor %}
-    </div>
+<header class="page-header">
+    <p class="eyebrow">Research</p>
+    <h1>Learning, simulation, and optimization for complex systems</h1>
+    <p>I work across financial engineering and physical infrastructure, with a consistent focus on reliability: how models behave under uncertainty, how assumptions fail, and how decisions can remain defensible.</p>
+</header>
 
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in projects_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
+<section class="project-list" aria-label="Research projects">
+    <article class="project-detail">
+        <div class="project-visual contain"><img src="{{ '/assets/images/research/option-market-pipeline.png' | relative_url }}" alt="Pipeline for auditing risk-neutral option market generators"></div>
+        <div class="project-copy">
+            <div class="research-meta"><span>Financial engineering · Current</span><span>Oct 2026–present</span></div>
+            <h2>Auditing Risk-Neutral Generative Models for Option Markets</h2>
+            <p>Developing a framework for auditing diffusion-based SPX option-surface generators and risk-neutral pricing kernels, with emphasis on model reliability and risk-premium identification.</p>
+            <ul>
+                <li>Built an end-to-end pipeline using 47.4 million SPX option quotes from OptionMetrics and Heston ground-truth simulations.</li>
+                <li>Disentangles surface representation error, finite-sample entropy bias, and generator misspecification.</li>
+                <li>Evaluates predictive calibration, no-arbitrage consistency, and out-of-sample pricing-kernel validity against autoregressive and Gaussian benchmarks.</li>
+            </ul>
+            <div class="chip-row"><span>Diffusion models</span><span>SPX options</span><span>Entropic projection</span><span>Risk premia</span></div>
         </div>
-    </div>
-</div>
+        <figure class="project-secondary-figure">
+            <img src="{{ '/assets/images/research/option-premia-audit.png' | relative_url }}" alt="Comparison of estimated and true one-day equity premia across generative models">
+            <figcaption>Auditing how free and return-anchored diffusion generators recover one-day equity premia under controlled simulations.</figcaption>
+        </figure>
+    </article>
+
+    <article class="project-detail">
+        <div class="project-visual contain"><img src="{{ '/assets/images/research/micro-ct-method.png' | relative_url }}" alt="Anchor-consistent conditional residual diffusion model architecture"></div>
+        <div class="project-copy">
+            <div class="research-meta"><span>UC Berkeley & HKUST · Current</span><span>Feb 2025–present</span></div>
+            <h2>Anchor-Consistent Conditional Residual Diffusion for Stochastic 3D Micro-CT Completion</h2>
+            <p>Developed a native-resolution conditional diffusion model for reconstructing missing slices in sparsely sampled, multi-phase GGBS CT volumes.</p>
+            <ul>
+                <li>Introduces a distance-conditioned residual formulation that models nonlinear structure while keeping measured anchor slices exact.</li>
+                <li>Uses a factorized 3D U-Net with z-axis attention and a multi-objective training loss.</li>
+                <li>Validates morphology, topology, local texture, and cross-slice continuity on held-out specimens.</li>
+            </ul>
+            <div class="chip-row"><span>Conditional diffusion</span><span>3D U-Net</span><span>Micro-CT</span><span>Materials informatics</span></div>
+        </div>
+    </article>
+
+    <article class="project-detail">
+        <div class="project-visual cover"><img src="{{ '/assets/images/research/wildfire-network.jpeg' | relative_url }}" alt="Wildfire burning across a hillside"></div>
+        <div class="project-copy">
+            <div class="research-meta"><span>UC Berkeley CE 291D · Project lead</span><span>Sep 2026–present</span></div>
+            <h2>Wildfire-Induced Cellular Network Resilience via Monte Carlo–Driven Graph Neural Surrogates</h2>
+            <p>A physics- and graph-informed framework for forecasting time-dependent cellular service outages under joint wildfire and public-safety power shutoff scenarios.</p>
+            <ul>
+                <li>Infers cellular network topology from public cell-site data and simulates fire damage, grid loss, backup-power depletion, and disconnection.</li>
+                <li>Combines U-Net and temporal graph neural networks to estimate component failure and probabilistic coverage.</li>
+                <li>Measures population-weighted service loss using hazard, infrastructure, and U.S. Census data.</li>
+            </ul>
+            <div class="chip-row"><span>Monte Carlo</span><span>Temporal GNN</span><span>U-Net</span><span>Infrastructure risk</span></div>
+        </div>
+    </article>
+
+    <article class="project-detail project-detail-text">
+        <div class="project-index">04</div>
+        <div class="project-copy">
+            <div class="research-meta"><span>Bachelor’s thesis</span><span>Dec 2025–Jun 2026</span></div>
+            <h2>Deep Learning for Nonlinear Regular-Wave Loads on Dual Cylinders</h2>
+            <p>Built a physics-informed U-Net for spatiotemporal pressure and velocity fields around dual cylinders under fifth-order nonlinear Stokes waves. The workflow combines 3D RANS and k–ω SST simulations with standardized 256×256 multi-channel tensors, reaching a validation MAE of 0.72% while accelerating inference over conventional CFD.</p>
+            <div class="chip-row"><span>Physics-informed ML</span><span>CFD</span><span>U-Net</span><span>Wave–structure interaction</span></div>
+        </div>
+    </article>
+
+    <article class="project-detail project-detail-text">
+        <div class="project-index">05</div>
+        <div class="project-copy">
+            <div class="research-meta"><span>University of Leeds · Team lead</span><span>May–Sep 2024</span></div>
+            <h2>3D-Printed ECC Expansion Plates and Mechanical Performance</h2>
+            <p>Led the design and finite-element optimization of PP–ECC bridge expansion plates, followed by comparative four-point fatigue and freeze–thaw testing across steel-, BFRP-, CFRP-, GFRP-reinforced, and unreinforced variants.</p>
+            <div class="chip-row"><span>ECC</span><span>3D printing</span><span>Finite elements</span><span>Durability</span></div>
+        </div>
+    </article>
+
+    <article class="project-detail project-detail-text">
+        <div class="project-index">06</div>
+        <div class="project-copy">
+            <div class="research-meta"><span>SWJTU · Core member</span><span>May 2023–Sep 2024</span></div>
+            <h2>Digital Twin for Bridge Cantilever Assembly Construction</h2>
+            <p>Built and validated a 1:100 bridge model, achieving less than 10% error between finite-element predictions and DIC experiments. Designed a sensor and SQL Server pipeline for live displacement, cable-force, and temperature monitoring with safety warnings.</p>
+            <div class="chip-row"><span>Digital twin</span><span>DIC</span><span>Sensing</span><span>Midas Civil</span></div>
+        </div>
+    </article>
+
+    <article class="project-detail project-detail-text">
+        <div class="project-index">07</div>
+        <div class="project-copy">
+            <div class="research-meta"><span>University of Leeds · Core member</span><span>May–Sep 2023</span></div>
+            <h2>Compressive Creep of Engineered Cementitious Composites</h2>
+            <p>Investigated early-age compressive creep and durability using digital photogrammetry for deformation measurement, a telecentric imaging system, and sub-pixel interpolation to recover high-resolution full-field strain.</p>
+            <div class="chip-row"><span>ECC</span><span>Experimental mechanics</span><span>Photogrammetry</span><span>Sub-pixel vision</span></div>
+        </div>
+    </article>
+</section>

@@ -1,31 +1,55 @@
 ---
 layout: default
-title: "Contests"
-navbar_title: Contests
-permalink: /contests/
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+title: Honors and Leadership
+navbar_title: Honors
+permalink: /honors/
+description: "Honors, competitions, scholarships, and leadership experience of Nate Yichai Huang."
 ---
-{% assign contests_by_year = site.contests | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-<div class="row">
-    <div class="col-12 col-lg-10">
-        {% for year in contests_by_year %}
-        {% assign num_contests = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
-            {% for item in year.items %}
-                {% include widgets/contest_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
-        </div>
-        {% endfor %}
+<header class="page-header">
+    <p class="eyebrow">Honors & leadership</p>
+    <h1>Teamwork that moves ideas into practice</h1>
+    <p>Selected awards, scholarships, competitions, and service from my current CV.</p>
+</header>
+
+<section class="honor-feature">
+    <div class="honor-rank">National Silver</div>
+    <div>
+        <p class="eyebrow">Top 0.01% of 5.14 million entries · Team lead · October 2024</p>
+        <h2>China International College Students’ Innovation Competition</h2>
+        <p>Directed a 22-member research team—two academicians, five professors, and fifteen students—to develop high-toughness, durable concrete bridge expansion plates. The solution was validated experimentally, transferred to industry, and applied in Chengdu.</p>
+    </div>
+</section>
+<section class="two-column-section">
+    <div>
+        <div class="section-heading compact"><div><p class="eyebrow">Competitions</p><h2>Selected awards</h2></div></div>
+        <article class="timeline-item">
+            <time>Jun 2024</time>
+            <div><h3>ACI International Concrete Dragon Boat Competition</h3><p><strong>Best Technical Proposal Award · Team lead</strong></p><p>Designed an ECC mix with glass microspheres, hybrid carbon/BFRP reinforcement, and a drag-reducing water-stair hull that improved flow efficiency by 22%.</p></div>
+        </article>
+        <article class="timeline-item">
+            <time>Sep 2023</time>
+            <div><h3>China Undergraduate Mathematical Contest in Modeling</h3><p><strong>First Prize · Top 10% · Core member</strong></p><p>Combined SARIMA forecasting, correlation and hypothesis testing, and constrained optimization to design a profit-maximizing vegetable replenishment strategy.</p></div>
+        </article>
+        <article class="timeline-item">
+            <time>2024–25</time>
+            <div><h3>Southwest Jiaotong University</h3><p><strong>SWJTU Scholarships · Outstanding Student Leader · Integrity and Excellence Award</strong></p></div>
+        </article>
     </div>
 
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in contests_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
-        </div>
+    <div>
+        <div class="section-heading compact"><div><p class="eyebrow">Service</p><h2>Leadership & activities</h2></div></div>
+        <article class="timeline-item">
+            <time>2025–26</time>
+            <div><h3>Engineering Structures WeChat Official Account</h3><p><strong>Operations team member</strong></p><p>Communicated recent research, methods, calls for papers, and leading laboratories to broaden access to structural-engineering scholarship.</p></div>
+        </article>
+        <article class="timeline-item">
+            <time>2023–24</time>
+            <div><h3>Cross-Cultural Language Exchange Association</h3><p><strong>Minister of Publicity</strong></p><p>Organized University of Leeds faculty and students for cultural and language-exchange activities.</p></div>
+        </article>
+        <article class="timeline-item">
+            <time>2023–24</time>
+            <div><h3>Young Volunteers Association of SWJTU–Leeds</h3><p><strong>Director of Foreign Affairs and General Department</strong></p><p>Organized 106 volunteer services involving 578 students.</p></div>
+        </article>
     </div>
-</div>
+</section>

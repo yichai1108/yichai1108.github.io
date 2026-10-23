@@ -1,31 +1,46 @@
 ---
 layout: default
-title: "Patents"
+title: Patents
 navbar_title: Patents
 permalink: /patents/
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+description: "Patents by Nate Yichai Huang in bridge expansion-joint materials, sensing, and construction."
 ---
-{% assign patents_by_year = site.patents | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-<div class="row">
-    <div class="col-12 col-lg-10">
-        {% for year in patents_by_year %}
-        {% assign num_patents = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
-            {% for item in year.items %}
-                {% include widgets/patent_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
-        </div>
-        {% endfor %}
-    </div>
+<header class="page-header">
+    <p class="eyebrow">Patents</p>
+    <h1>Translating research into bridge technology</h1>
+    <p>Granted utility models and invention applications spanning durable expansion plates, lifecycle sensing, low-noise materials, and joint construction.</p>
+</header>
 
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in patents_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
-        </div>
-    </div>
-</div>
+<section class="patent-grid" aria-label="Patent list">
+    <article class="patent-card">
+        <span class="patent-number">CN223061438U</span>
+        <h2>An Assembly Structure for Contraction Joints of Bridge Concrete</h2>
+        <p><strong>Y. Huang</strong> et al.</p>
+        <time datetime="2025-07-04">Granted July 4, 2025</time>
+    </article>
+    <article class="patent-card">
+        <span class="patent-number">CN223005568U</span>
+        <h2>A Mechanical Sensor for Detecting the Entire Life Cycle of Bridge Expansion Joints</h2>
+        <p><strong>Y. Huang</strong> et al.</p>
+        <time datetime="2025-06-20">Granted June 20, 2025</time>
+    </article>
+    <article class="patent-card">
+        <span class="patent-number">CN222730335U</span>
+        <h2>A High-Toughness, Low-Noise Bridge Concrete Expansion Plate</h2>
+        <p><strong>Y. Huang</strong> et al.</p>
+        <time datetime="2025-04-08">Granted April 8, 2025</time>
+    </article>
+    <article class="patent-card">
+        <span class="patent-number">CN119259415A</span>
+        <h2>Spraying Method for an Environmentally Friendly Vibration- and Noise-Reducing Polyurethane Replacement Material</h2>
+        <p>H. Shu, <strong>Y. Huang</strong>, et al.</p>
+        <time datetime="2025-01-07">Published January 7, 2025</time>
+    </article>
+    <article class="patent-card">
+        <span class="patent-number">CN119062015A</span>
+        <h2>A Method for Enhancing the Durability of the Debonding Layer of Concrete Expansion Joints</h2>
+        <p>Y. Liang, <strong>Y. Huang</strong>, et al.</p>
+        <time datetime="2024-12-03">Published December 3, 2024</time>
+    </article>
+</section>

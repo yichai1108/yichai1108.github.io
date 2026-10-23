@@ -1,92 +1,10 @@
 primary_name: "Nate"
-secondary_name: "Yichai HUANG"
-navbar_name: "Homepage"
-
-positions:
-- logo: /assets/images/badges/UOL1.png  # Logo is optional
-  name: B.E. in Civil Engineering with Transport
-# - name: Position 2 without logo
-
-
-email: "hyccivil@outlook.com"
-cv_link: /assets/CV/cv.pdf  #IDK
-github: yichai1108
-twitter: HHHYYCivil  # Do not include the '@' symbol
-wechat_qrcode: /assets/images/badges/wechat1.jpg
-wechat_prompt: >- 
-  Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past), and your <strong>reason</strong> for adding me on WeChat. Thanks!
-linkedin: yichai-huang-4535b5339
-Researchgate: profile/Yichai-Huang?ev=hdr_xprf
-
-
-
-short_bio_text_justify: false
-short_bio: >-
-  <p>
-    I'm an interdisciplinary researcher interested in applying Machine Learning, Computer Vision to Structure Engineering and Engineering Material,  
-    understand human-environment interactions, and remote sensing for urban perception and analysis.
-  <img src="assets/images/photos/interst.png" alt="Research Interests" 
-           style="float: left; width: 350px; margin-right: 10px; border-radius: 8px;">
-  </p>
-
-  <p>
-    Currently, I am seeking a <strong>Ph.D. position</strong> starting in Fall 2026/ Fall 2027.
-    I am pursuing a Bachelor of Engineering in Civil Engineering with Transport at the  
-    <a href="https://leeds.swjtu.edu.cn/english/About_Us/Overview.htm" target="_blank">Southwest Jiaotong University-University of Leeds Joint School</a> 
-    with an expected graduation in Jun 2026. 
-  </p>
-
-  <p>
-    I am also a Undergraduate Assistant at <a href="https://www.hkust.edu.cn/" target="_blank">HKUST</a> and <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a>, 
-    working with Prof. <a href="https://wufan-zhao.github.io/" target="_blank">Ziqi Wang</a>, Prof. <a href="https://wufan-zhao.github.io/" target="_blank">Dan Tsang</a>, Dr. <a href="https://wufan-zhao.github.io/" target="_blank">Xiaohong Zhu</a> and Mr. <a href="https://wufan-zhao.github.io/" target="_blank">MukDok LEE</a>. 
-  </p>
-
-  <p>
-    <i class="fa-solid fa-rectangle-ad" style="color: #d60000;"></i> 
-    <span style="color: #d60000;">I am looking for collaborators and interns</span> 
-    interested in GeoAI, Spatial Analysis, and their applications in urban science and human-environment interaction. 
-    My goal is to develop novel tools, algorithms, and methodologies to empower future researchers in exploring Urban Science and 
-    understanding the dynamic relationship between humans and their environments. If you are interested in collaborating, 
-    please feel free to reach out via email or WeChat.
-  </p>
-
-portrait_url: /assets/images/photos/profile.jpg
-portrait_caption: >-
-  Serve the cat, rule the world.
-
-education:
-- name: Southwest Jiaotong University
-  logo: /assets/images/badges/SWJTU.png
-  position: B.E. in Civil Engineering with Transport
-  date: Sep. 2022- Jul. 2026
-- name: University of Leeds
-  logo: /assets/images/badges/UOL1.png
-  position: B.E. in Civil Engineering with Transport
-  date: Sep. 2022- Jul. 2026
-
-experience:
-- name: University of California, Berkeley
-  logo: /assets/images/badges/UCB.png
-  position: Research Assistant
-  date: Feb. 2025 - Present
-
-- name: The Hong Kong University of Science and Technology
-  logo: /assets/images/badges/UST.svg.png
-  position: Research Assistant
-  date: Feb. 2025 - Present
-
-
-- name: Engineering Structures - Elsevier
-  logo: /assets/images/badges/EL.png
-  position: Operations Team Member of Wechat Official Account
-  date: May. 2025 - Present
-
-
-
-awards:
-- name: 2024 China International College Students’ Innovation Competition (Main Track) - Silver award (Second Prize)
-  date: Sep. 2024
-- name: (Supported by ACI) 2024 International Concrete Dragon Boat Competition - Best Technical Proposal Award
-  date: Jun. 2024
-- name: 2023 Contemporary Undergraduate Mathematical Contest in Modeling Sichuan Province- First Prize
-  date: Sep. 2023
+secondary_name: "Yichai Huang"
+navbar_name: "Nate Huang"
+title: "M.S. Student in Systems Engineering at UC Berkeley"
+tagline: "Applied optimization and machine learning for engineered systems under uncertainty."
+email: "yichai@berkeley.edu"
+cv_link: "/assets/CV/Nate_Huang_CV.pdf"
+github: "yichai1108"
+linkedin: "nate-huang"
+portrait_url: "/assets/images/photos/profile.jpg"
