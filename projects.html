@@ -29,10 +29,6 @@ description: "Research projects by Nate Yichai HUANG in financial engineering, g
                 <figure class="project-visual contain">
                     <img src="{{ '/assets/images/research/option-market-pipeline.png' | relative_url }}" alt="Pipeline for auditing risk-neutral option-market generators">
                 </figure>
-                <figure class="project-secondary-inline">
-                    <img src="{{ '/assets/images/research/option-premia-audit.png' | relative_url }}" alt="Comparison of estimated and true one-day equity premia across generative models">
-                    <figcaption>Estimated versus true one-day equity premia under controlled simulations.</figcaption>
-                </figure>
             </div>
             <div class="project-copy">
                 <div class="research-meta"><span>Financial Systems · Risk Analysis</span><span>Oct 2026–present</span></div>
@@ -47,6 +43,20 @@ description: "Research projects by Nate Yichai HUANG in financial engineering, g
                     <li>Evaluates predictive calibration, no-arbitrage consistency, and out-of-sample pricing-kernel validity against autoregressive and Gaussian benchmarks.</li>
                 </ul>
                 <div class="chip-row"><span>Diffusion models</span><span>SPX options</span><span>Entropic projection</span><span>Risk premia</span></div>
+            </div>
+            <div class="project-results-gallery" aria-label="Selected results from the option-market audit">
+                <figure class="project-result-figure">
+                    <img src="{{ '/assets/images/research/option-forecast-skill.png' | relative_url }}" alt="Forecast skill plotted against risk-premium recovery error for diffusion and benchmark generators">
+                    <figcaption>Forecast skill does not guarantee accurate recovery of the equity risk premium.</figcaption>
+                </figure>
+                <figure class="project-result-figure">
+                    <img src="{{ '/assets/images/research/option-premia-audit.png' | relative_url }}" alt="Comparison of estimated and true one-day equity premia across generative models">
+                    <figcaption>Return anchoring recovers the level of the premium while leaving its daily variation difficult to identify.</figcaption>
+                </figure>
+                <figure class="project-result-figure">
+                    <img src="{{ '/assets/images/research/option-kernel-reliability.png' | relative_url }}" alt="SPX pricing kernels compared by normalizer reliability and concentration across dates">
+                    <figcaption>On held-out SPX data, no learned kernel meets the joint reliability and concentration requirements.</figcaption>
+                </figure>
             </div>
         </article>
 

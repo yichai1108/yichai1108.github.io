@@ -1131,6 +1131,35 @@ p:last-child {
     text-align: center;
 }
 
+.project-results-gallery {
+    display: grid;
+    grid-column: 1 / -1;
+    gap: 1px;
+    padding: 1px 0 0;
+    background: var(--line);
+}
+
+.project-result-figure {
+    margin: 0;
+    padding: clamp(18px, 3vw, 34px);
+    background: #f3f5f6;
+}
+
+.project-result-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-result-figure figcaption {
+    max-width: 900px;
+    margin: 14px auto 0;
+    color: var(--muted);
+    font-size: 0.8rem;
+    line-height: 1.55;
+    text-align: center;
+}
+
 .project-photo-pair {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
