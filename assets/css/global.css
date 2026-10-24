@@ -586,7 +586,12 @@ p:last-child {
     border-top: 1px solid var(--line);
 }
 
+.awards-list {
+    gap: 8px;
+}
+
 .awards-list .resume-item {
+    padding: 10px 0;
     border-top: 0;
 }
 
