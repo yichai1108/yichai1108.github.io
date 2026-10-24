@@ -595,6 +595,10 @@ p:last-child {
     border-top: 0;
 }
 
+.leadership-list {
+    gap: 0;
+}
+
 .resume-item time {
     color: var(--blue);
     font-size: 0.72rem;
