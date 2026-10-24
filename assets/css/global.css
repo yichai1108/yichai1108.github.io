@@ -586,6 +586,10 @@ p:last-child {
     border-top: 1px solid var(--line);
 }
 
+.awards-list .resume-item {
+    border-top: 0;
+}
+
 .resume-item time {
     color: var(--blue);
     font-size: 0.72rem;
@@ -1916,24 +1920,50 @@ p:last-child {
     }
 
     .year-nav {
-        position: static;
-        width: auto;
+        position: fixed;
+        z-index: 890;
+        top: 70px;
+        right: 0;
+        left: 0;
+        width: 100%;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: flex-start;
+        gap: 8px;
+        padding: 10px max(20px, calc((100vw - 1480px) / 2 + 20px));
+        overflow-x: auto;
+        overflow-y: hidden;
+        background: rgba(247, 245, 240, 0.94);
+        border-bottom: 1px solid rgba(11, 47, 82, 0.09);
+        box-shadow: 0 8px 24px rgba(11, 47, 82, 0.06);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior-x: contain;
+        scroll-padding-inline: 20px;
+        scroll-snap-type: x proximity;
+        scrollbar-width: none;
+        touch-action: pan-x;
+    }
+
+    .year-nav::-webkit-scrollbar {
+        display: none;
     }
 
     .year-nav a {
+        flex: 0 0 auto;
         width: auto;
         min-width: 76px;
         padding: 9px 14px;
         text-align: center;
+        scroll-snap-align: start;
     }
 
     .research-year-section,
     .publication-year-section,
     .contest-year-section,
     .news-year-section {
+        scroll-margin-top: 152px;
         padding-right: 0;
     }
 

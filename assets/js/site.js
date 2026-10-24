@@ -7,12 +7,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!links.length || !sections.length) return;
 
+        var activeId = "";
+
         function setActive(id) {
+            if (id === activeId) return;
+            activeId = id;
+
             links.forEach(function (link) {
                 var active = link.getAttribute("href") === "#" + id;
                 link.classList.toggle("active", active);
-                if (active) link.setAttribute("aria-current", "true");
-                else link.removeAttribute("aria-current");
+                if (active) {
+                    link.setAttribute("aria-current", "true");
+
+                    // On narrow screens the year selector is horizontally
+                    // scrollable. Keep the active year visible without moving
+                    // the page vertically.
+                    if (nav.scrollWidth > nav.clientWidth) {
+                        var targetLeft = link.offsetLeft - (nav.clientWidth - link.offsetWidth) / 2;
+                        nav.scrollTo({ left: Math.max(0, targetLeft), behavior: "smooth" });
+                    }
+                } else {
+                    link.removeAttribute("aria-current");
+                }
             });
         }
 
