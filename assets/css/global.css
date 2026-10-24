@@ -1138,7 +1138,8 @@ p:last-child {
 .option-audit-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+    align-self: start;
+    align-content: start;
     gap: 1px;
     background: var(--line);
     border-right: 1px solid var(--line);
