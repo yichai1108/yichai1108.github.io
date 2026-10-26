@@ -1351,7 +1351,7 @@ p:last-child {
     color: #1f5b94;
 }
 
-.preprint-placeholder {
+.preprint-link {
     display: inline-flex;
     gap: 8px;
     align-items: center;
@@ -1363,6 +1363,15 @@ p:last-child {
     color: var(--muted);
     font-size: 0.78rem;
     font-weight: 700;
+    text-decoration: none;
+    transition: border-color 160ms ease, color 160ms ease, background 160ms ease;
+}
+
+.preprint-link:hover,
+.preprint-link:focus-visible {
+    background: #eaf2fb;
+    border-color: #8bb3dc;
+    color: #1f5b94;
 }
 
 .patent-grid {
