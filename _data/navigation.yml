@@ -11,3 +11,5 @@ pages:
     url: /patents/
   - name: News
     url: /news/
+  - name: Beyond
+    url: /beyond/

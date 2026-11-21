@@ -314,6 +314,156 @@ p:last-child {
     border-top: 1px solid var(--line);
 }
 
+.beyond-header {
+    max-width: 900px;
+    padding: 100px 0 58px;
+}
+
+.beyond-header h1 {
+    margin: 0 0 25px;
+}
+
+.beyond-header > p:last-child {
+    max-width: 670px;
+    color: #43515f;
+    font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+}
+
+.beyond-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    padding: 0 0 110px;
+}
+
+.beyond-card {
+    min-width: 0;
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 28px;
+    color: var(--ink);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 12px 38px rgba(11, 47, 82, 0.05);
+}
+
+.beyond-card-link:hover {
+    color: var(--ink);
+    border-color: rgba(27, 94, 146, 0.35);
+    box-shadow: 0 22px 50px rgba(11, 47, 82, 0.12);
+    transform: translateY(-5px);
+}
+
+.beyond-visual {
+    min-height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -28px -28px 28px;
+    background: #edf3f6;
+    border-bottom: 1px solid var(--line);
+}
+
+.sports-icons {
+    gap: 18px;
+    background: linear-gradient(145deg, #e8f2f5, #f5eee0);
+}
+
+.sports-icons span {
+    width: 78px;
+    height: 78px;
+    display: grid;
+    place-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(11, 47, 82, 0.09);
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(11, 47, 82, 0.08);
+    font-size: 2.25rem;
+}
+
+.framelet-mark {
+    background: #f2f1eb;
+}
+
+.framelet-mark img {
+    width: 132px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 14px 34px rgba(11, 47, 82, 0.11);
+}
+
+.travel-icon {
+    position: relative;
+    color: var(--navy);
+    background: linear-gradient(145deg, #e7f0f6, #f7f5f0);
+}
+
+.travel-icon .fa-earth-americas {
+    font-size: 6.3rem;
+    opacity: 0.9;
+}
+
+.travel-icon .fa-plane {
+    position: absolute;
+    margin: -68px 0 0 92px;
+    color: var(--gold);
+    font-size: 2rem;
+    transform: rotate(-10deg);
+}
+
+.continued-mark {
+    color: var(--navy);
+    background: repeating-linear-gradient(-45deg, #f7f5f0, #f7f5f0 12px, #eef2f4 12px, #eef2f4 24px);
+    font-family: "DM Serif Display", Georgia, serif;
+    font-size: 6.5rem;
+    line-height: 1;
+}
+
+.beyond-card-copy {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.beyond-kicker {
+    margin: 0 0 10px;
+    color: var(--blue);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.beyond-card h2 {
+    margin: 0 0 15px;
+    font-size: clamp(1.85rem, 2.7vw, 2.45rem);
+}
+
+.beyond-card-copy > p:last-of-type {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+.beyond-link-label {
+    width: fit-content;
+    margin-top: auto;
+    padding-top: 24px;
+    color: var(--navy);
+    border-bottom: 1px solid var(--gold);
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.beyond-card-continued {
+    border-style: dashed;
+}
+
 .section-heading {
     display: flex;
     gap: 40px;
@@ -1775,6 +1925,10 @@ p:last-child {
         background: var(--paper);
     }
 
+    .beyond-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .navbar-nav {
         align-items: stretch;
         padding: 18px 0 12px;
@@ -1918,6 +2072,19 @@ p:last-child {
 
     .site-navbar {
         min-height: 70px;
+    }
+
+    .beyond-header {
+        padding: 70px 0 44px;
+    }
+
+    .beyond-grid {
+        grid-template-columns: 1fr;
+        padding-bottom: 80px;
+    }
+
+    .beyond-card {
+        min-height: 440px;
     }
 
     .hero-section {
